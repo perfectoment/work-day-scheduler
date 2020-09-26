@@ -6,15 +6,15 @@ loadStorage();
 
 
 function loadStorage(){
-    $("#9Input").append(localStorage.getItem("9am"));
-    $("#10Input").append(localStorage.getItem("10am"));
-    $("#11Input").append(localStorage.getItem("11am"));
-    $("#12Input").append(localStorage.getItem("12am"));
-    $("#1Input").append(localStorage.getItem("1pm"));
-    $("#2Input").append(localStorage.getItem("2pm"));
-    $("#3Input").append(localStorage.getItem("3pm"));
-    $("#4Input").append(localStorage.getItem("4pm"));
-    $("#5Input").append(localStorage.getItem("5pm"));
+    $("#9Input").append(localStorage.getItem("9am").replace(/['"]+/g, ''));
+    $("#10Input").append(localStorage.getItem("10am").replace(/['"]+/g, ''));
+    $("#11Input").append(localStorage.getItem("11am").replace(/['"]+/g, ''));
+    $("#12Input").append(localStorage.getItem("12am").replace(/['"]+/g, ''));
+    $("#1Input").append(localStorage.getItem("1pm").replace(/['"]+/g, ''));
+    $("#2Input").append(localStorage.getItem("2pm").replace(/['"]+/g, ''));
+    $("#3Input").append(localStorage.getItem("3pm").replace(/['"]+/g, ''));
+    $("#4Input").append(localStorage.getItem("4pm").replace(/['"]+/g, ''));
+    $("#5Input").append(localStorage.getItem("5pm").replace(/['"]+/g, ''));
     
       
 
