@@ -9,8 +9,8 @@ function loadStorage(){
     $("#9Input").append(localStorage.getItem("9am"));
     $("#10Input").append(localStorage.getItem("10am"));
     $("#11Input").append(localStorage.getItem("11am"));
-    $("#12Input").append(localStorage.getItem("11am"));
-    $("#1Input").append(localStorage.getItem("11am"));
+    $("#12Input").append(localStorage.getItem("12am"));
+    $("#1Input").append(localStorage.getItem("1pm"));
     $("#2Input").append(localStorage.getItem("2pm"));
     $("#3Input").append(localStorage.getItem("3pm"));
     $("#4Input").append(localStorage.getItem("4pm"));
