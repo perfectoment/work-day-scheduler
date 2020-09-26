@@ -1,9 +1,13 @@
-$(document).ready(function() {
+ $(document).ready(function() {
 var timeTime = moment().format("MMM Do YYYY");
 $("#currentDay").append(timeTime);
 loadStorage();
+timeColors();
 
+var hour = moment().format("HH");
 
+// 
+console.log(hour)
 
 function loadStorage(){
     $("#9Input").append(localStorage.getItem("9am").replace(/['"]+/g, ''));
@@ -73,4 +77,23 @@ localStorage.setItem("5pm", JSON.stringify(form5))
 
 })
 
-})
+function timeColors() { 
+if(hour = '10') {
+    $("#10Input").addClass("present")}
+if(hour = "11","12","13","14","15","16","17"){
+    $("#10Input").addClass("future");
+}
+if(hour = "11"){
+    $("#11Input").addClass("present")
+ }
+
+}
+ 
+
+ 
+ }
+
+
+
+
+ )
