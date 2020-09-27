@@ -21,8 +21,8 @@ colorChange();
   ```
 
 ## Screenshot
-![Screenshot](assets/top.PNG "Top of Scheduler")
-![Screenshot](assets/bottom.PNG "Bottom of Scheduler")
+![Screenshot](Assets/top.PNG "Top of Scheduler")
+![Screenshot](Assets/bottom.PNG "Bottom of Scheduler")
 
 
 ## Built With

@@ -94,5 +94,6 @@ function colorChange(){
   console.log(hour)
 }
  }
+loadStorage();
 colorChange();
 })
