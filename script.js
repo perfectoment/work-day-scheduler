@@ -15,19 +15,62 @@ loadStorage();
 
 
 function loadStorage(){
-    $("#09").append(localStorage.getItem("9am").replace(/['"]+/g, ''));
-    $("#10").append(localStorage.getItem("10am").replace(/['"]+/g, ''));
-    $("#11").append(localStorage.getItem("11am").replace(/['"]+/g, ''));
-    $("#12").append(localStorage.getItem("12am").replace(/['"]+/g, ''));
-    $("#13").append(localStorage.getItem("1pm").replace(/['"]+/g, ''));
-    $("#14").append(localStorage.getItem("2pm").replace(/['"]+/g, ''));
-    $("#15").append(localStorage.getItem("3pm").replace(/['"]+/g, ''));
-    $("#16").append(localStorage.getItem("4pm").replace(/['"]+/g, ''));
-    $("#17").append(localStorage.getItem("5pm").replace(/['"]+/g, ''));
+    var objectKeys = [
+        {
+            id: "#09",
+            key: "9am"
+        },
+        {
+            id:"#10",
+            key: "10am"
+        },
+        {
+            id: "#11",
+            key: "11am"
+        },
+        {
+            id:"#12",
+            key: "12am"
+        },
+        {
+            id: "#13",
+            key: "1pm"
+        },
+        {
+            id:"#14",
+            key: "2pm"
+        },
+        {
+            id: "#15",
+            key: "3pm"
+        },
+        {
+            id:"#16",
+            key: "4pm"
+        },   {
+            id: "#17",
+            key: "5pm"
+        }];
+    for(var i =0; i < objectKeys.length; i++){
+    if(localStorage.getItem(objectKeys[i].key) !== null){
     
-      
+       
+    $(objectKeys[i].id).append(localStorage.getItem(objectKeys[i].key).replace(/['"]+/g, ''));
+}
+    // $("#10").append(localStorage.getItem("10am").replace(/['"]+/g, ''));
+    // $("#11").append(localStorage.getItem("11am").replace(/['"]+/g, ''));
+    // $("#12").append(localStorage.getItem("12am").replace(/['"]+/g, ''));
+    // $("#13").append(localStorage.getItem("1pm").replace(/['"]+/g, ''));
+    // $("#14").append(localStorage.getItem("2pm").replace(/['"]+/g, ''));
+    // $("#15").append(localStorage.getItem("3pm").replace(/['"]+/g, ''));
+    // $("#16").append(localStorage.getItem("4pm").replace(/['"]+/g, ''));
+    // $("#17").append(localStorage.getItem("5pm").replace(/['"]+/g, ''));
+    
+    
+    }
 
 }
+
 
 $("#btnSave9").on("click", function(){
 var form9 = $("#09").val()
